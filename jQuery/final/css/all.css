@@ -1,0 +1,651 @@
+/* ------------reset------------ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------all------------*/
+body {
+    font-family: Microsoft JhengHei;
+}
+
+.layout {
+    margin: auto;
+    max-width: 1000px;
+    min-width: 375px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+/* ------------header------------*/
+/* ------bar------ */
+.bar {
+    background-color: #f6f6f6;
+}
+
+.bar a {
+    text-decoration: none;
+}
+
+.bar ul {
+    float: right;
+    margin-right: 7px;
+}
+
+.bar img,
+.bar span {
+    float: left;
+    margin-left: 2px;
+}
+
+.bar li {
+    padding: 0px 5px;
+    margin: 5px 0px;
+    float: left;
+}
+
+.bar .fb {
+    border-right: 1px solid #cccccc;
+}
+
+.bar .fb a,
+.bar .fb a:visited {
+    color: #4460a0;
+}
+
+.bar .twitter a,
+.bar .twitter a:visited {
+    color: #00aaec;
+}
+
+/* ------menu------ */
+.menu h1 {
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.menu h1 a {
+    display: block;
+    width: 170px;
+    height: 36px;
+    background-image: url(../img/logo_1.png);
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu ul {
+    float: right;
+    margin-right: 5px;
+}
+
+.menu>ul>li>a,
+.menu>ul>li>a:visited {
+    color: #00cc99;
+    text-decoration: none;
+    padding: 20px 15px 18px 15px;
+    display: block;
+}
+
+.menu>ul>li {
+    float: left;
+    margin-left: 15px;
+}
+
+.menu>ul>li>a:hover {
+    border-bottom: 3px solid #00cc99;
+}
+
+.menu>ul>li>a.active {
+    border-bottom: 3px solid #00cc99;
+}
+
+.menu .submenu {
+    position: absolute;
+    text-align: center;
+    /*margin-top: 3px;*/
+    border-top: 1px solid #00cc99;
+    font-size: 14px;
+    font-weight: bold;
+    width: 90px;
+    z-index: 100;
+}
+
+.menu .submenu a,
+.menu .submenu a:visited {
+    display: block;
+    color: #00cc99;
+    background-color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    padding: 18px 3px;
+    border: 2px solid #00cc99;
+    border-top: 0;
+}
+
+.menu .submenu a:hover {
+    color: #FFF;
+    background-color: #00cc99;
+}
+
+.menu .submenu {
+    display: none;
+}
+
+/* ------------content------------*/
+/* ------banner------ */
+.banner{
+    height: 346px;
+}
+
+.banner .swiper-slide div{
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: right;
+    -ms-align-items: center;
+    align-items: center;
+}
+.banner .swiper-slide div h2 {
+    color: #FFF;
+    font-size: 36px;
+    line-height: 50px;
+    padding: 30px 15px;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+}
+.banner .swiper-slide .hex{
+background-image: url(../img/banner.png);
+background-color: #000;
+}
+
+.banner .swiper-slide .tri{
+background-image: url(../img/tri.png);
+}
+
+.banner .swiper-slide .pent{
+background-image: url(../img/pent.png);
+background-color: #000;
+}
+
+/* ------course------ */
+.course>ul>li {
+    box-sizing: border-box;
+    float: left;
+
+    width: 30%;
+    border: 1px solid #f1f1f1;
+    border-top: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px #d6d6d6;
+    margin: 55px 1.65% 0px 1.65%;
+
+}
+
+.course>ul>li a {
+    display: block;
+    padding: 18px;
+    color: #000;
+    text-decoration: none;
+}
+
+.course .image {
+    height: 145px;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.course h2 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.course p {
+    line-height: 22px;
+    text-align: justify;
+}
+
+.course .jq ul {
+    list-style: disc;
+    line-height: 22px;
+}
+
+.course .jq li {
+    margin-left: 20px;
+}
+
+/* ------contrast------ */
+.contrast h2 {
+    font-size: 24px;
+    text-align: center;
+    padding: 24px;
+    margin-top: 30px;
+}
+
+.contrast .mark {
+    color: #26ad88;
+}
+
+.contrast table {
+    width: 94%;
+    margin: 0 3% 0 3%;
+}
+
+.contrast tr {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.contrast th {
+    background-color: #f7f7f7;
+    text-align: left;
+    font-weight: bold;
+}
+
+.contrast th,
+.contrast td {
+    padding: 10px 18px 15px 18px;
+    vertical-align: middle;
+}
+
+/* ------------apply------------*/
+.apply {
+    background-image: linear-gradient(#00644b, #009771);
+    padding: 10px 0px;
+    margin-top: 60px;
+}
+
+.apply h2 {
+    color: #FFF;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    padding: 20px;
+}
+
+.apply .memo,
+.apply .information {
+    float: left;
+    padding: 2%;
+    width: 46%;
+}
+
+.apply label,
+.apply input[type=text] {
+    display: block;
+    width: 100%;
+}
+
+.apply label {
+    color: #FFF;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.apply input[type=text] {
+    box-sizing: border-box;
+    padding: 15px;
+    border: 0;
+    height: 20px;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    font-family: Microsoft JhengHei;
+}
+
+.apply textarea {
+    box-sizing: border-box;
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    height: 245px;
+    border-radius: 3px;
+    resize: none;
+    overflow: auto; // ie
+    font-family: Microsoft JhengHei;
+}
+
+.apply input[type=submit] {
+    float: right;
+    color: #FFF;
+    background-color: #00cc99;
+    padding: 8px 20px;
+    border: 0;
+    border-radius: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.apply input[type=submit]:hover {
+    color: #00cc99;
+    background-color: #FFF;
+}
+
+/* ------------footer------------*/
+.footer {
+    padding: 30px 0px;
+}
+
+.footer .logo {
+    display: block;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.footer ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.footer li {
+    padding: 5px 0px;
+}
+
+.footer a,
+.footer a:visited {
+    text-decoration: none;
+    color: #e55995;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* ------------clearfix------------*/
+.clearfix {
+    clear: both;
+}
+
+/* ------------lightbox------------*/
+.lightbox .lb-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* ------------top------------*/
+.top {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 40px;
+}
+
+.top:hover {
+    width: 50px;
+    right: 45px;
+    bottom: 45px;
+}
+
+/* ------------------rwd768------------------*/
+@media only screen and (max-width: 768px) {
+
+    /* ------bar------ */
+    .bar {
+        display: none;
+    }
+
+    /* ------------content------------*/
+    /* ------banner------ */
+    .banner {
+        height: 150px;
+    }
+
+    .banner .swiper-slide div h2 {
+        font-size: 24px;
+        padding: 15px;
+        line-height: 30px;
+    }
+
+    /* ------------content------------*/
+    /* ------course------ */
+    .course>ul>li {
+        float: none;
+        width: 95%;
+        margin: 15px 2.5%;
+    }
+
+    .course .image {
+        float: left;
+        width: 30%;
+    }
+
+    .course h2,
+    .course p,
+    .course .jq ul {
+        display: block;
+        margin-left: 5%;
+        float: left;
+        width: 60%;
+    }
+
+    .course h2 {
+        text-align: left;
+        padding-left: 0;
+    }
+}
+
+/* ------------------rwd640------------------*/
+@media only screen and (max-width: 640px) {
+
+    /* ------------content------------*/
+    /* ------contrast------ */
+    .contrast th,
+    .contrast td {
+        padding: 10px 3px 15px 3px;
+        text-align: center;
+    }
+
+    /* ------------footer------------*/
+    .footer {
+        padding: 15px 0px;
+    }
+
+    .footer .logo {
+        display: none;
+    }
+
+    .footer ul {
+        float: none;
+        text-align: center;
+    }
+}
+
+/* ------------------rwd480------------------*/
+@media only screen and (max-width: 480px) {
+
+    /* ------------content------------*/
+    /* ------course------ */
+    .course>ul>li {
+        display: block;
+    }
+
+    .course .image {
+        float: none;
+        width: auto;
+    }
+
+    .course h2,
+    .course p {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .course h2 {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    /* ------contrast------ */
+    .contrast th,
+    .contrast td {
+        font-size: 12px;
+    }
+
+    /* ------------apply------------*/
+    .apply {
+        margin-top: 30px;
+    }
+
+    .apply h2 {
+        line-height: normal;
+        padding: 10px;
+    }
+
+    .apply .memo,
+    .apply .information {
+        float: none;
+        padding: 0px 4%;
+        width: 92%;
+    }
+
+    .apply textarea {
+        height: 150px;
+    }
+
+    .apply input[type=submit] {
+        margin-bottom: 20px;
+    }
+}

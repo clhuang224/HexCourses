@@ -1,0 +1,713 @@
+/* ------------------reset------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------all------------------ */
+html {
+    background-color: #fff;
+}
+
+body {
+    font-family: Microsoft JhengHei Regular;
+    font-size: 14px;
+    background-color: #fafafa;
+    max-width: 1025px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 40px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------header------------ */
+.header {
+    background: url(img/img-headerShape.png) no-repeat right bottom;
+    height: 400px;
+}
+
+.header .logo {
+    color: #4A4A4A;
+    float: left;
+    margin-top: 124px;
+    width: 41.2%;
+    text-align: center;
+}
+
+.header .logo h1 {
+    font-size: 42px;
+    margin-top: 11px;
+}
+
+.header .logo span {
+    line-height: 19px;
+}
+
+.header .link {
+    color: white;
+    font-size: 18px;
+    float: left;
+    width: 58.8%;
+    margin-top: 124px;
+}
+
+.header .link img {
+    width: 30px;
+}
+
+.header .link a {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 11px 0px;
+}
+
+.header .link a,
+.header .link a:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header .link li:hover span {
+    text-decoration: underline;
+}
+
+.header .link span {
+    margin-left: 10px;
+}
+
+/* ------------skill------------ */
+.skill {
+    max-width: 903px;
+    margin: auto;
+}
+
+.skill h2 {
+    color: #1736dc;
+    margin-top: 90px;
+}
+
+.skill>ul {
+    margin-top: 8px;
+}
+
+.skill>ul>li {
+    width: 31%;
+    min-height: 249px;
+    border-radius: 6px;
+    float: left;
+    margin: 0px 1%;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+    padding-bottom: 3%;
+}
+
+.skill .skill1 {
+    background: url(img/img-skill-icon-1.png) center 30px, linear-gradient(#FFF 97%, #F58D23 3%);
+    background-repeat: no-repeat;
+
+}
+
+.skill .skill2 {
+    background: url(img/img-skill-icon-2.png) center 30px, linear-gradient(#FFF 97%, #539E43 3%);
+    background-repeat: no-repeat;
+}
+
+.skill .skill3 {
+    background: url(img/img-skill-icon-3.png) center 30px, linear-gradient(#FFF 97%, #6762A6 3%);
+    background-repeat: no-repeat;
+}
+
+.skill h3 {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.skill>ul>li>ul {
+    padding: 20px 40px 0px 40px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.skill>ul>li>ul>li:before {
+    content: '•';
+    margin-right: 20px;
+}
+
+.skill>ul>li>ul>li {
+    text-indent: 4;
+}
+
+/* ------------experience------------ */
+.experience {
+    max-width: 600px;
+    margin: auto;
+}
+
+.experience h2 {
+    color: #1736dc;
+}
+
+.experience ul {
+    background: url(img/dot-start.png) no-repeat center top;
+    position: relative;
+    padding: 85px 0px 46px 0px;
+
+}
+
+.experience ul:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    margin-left: -1px;
+    background-color: #D8D8D8;
+    display: block;
+}
+
+.experience ul:after {
+    content: ' ';
+    width: 46px;
+    height: 4px;
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -23px;
+    bottom: 0px;
+}
+
+.experience .left {
+    float: left;
+    margin-left: 15px;
+}
+
+.experience .right {
+    float: right;
+    margin-right: 15px;
+}
+
+.experience li {
+    background: #FFFFFF;
+    border: 1px solid #FB56BF;
+    border-radius: 10px;
+    max-width: 260px;
+    min-height: 136px;
+    margin-bottom: 7px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.experience li:before {
+    content: url(img/dot-timeItem.png);
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+.experience li span {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.53px;
+    color: #4A4A4A;
+    line-height: 16px;
+}
+
+.experience h3 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #8A1737;
+    letter-spacing: 0.53px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.experience h4 {
+    font-size: 12px;
+    color: #4A4A4A;
+    letter-spacing: 0.53px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+
+.experience p {
+    font-size: 10px;
+    color: #9B9B9B;
+    letter-spacing: 0.44px;
+    line-height: 18px;
+    margin-top: 7px;
+}
+
+/* ------------work------------ */
+.work {
+    max-width: 942px;
+    margin: auto;
+}
+
+.work h2 {
+    color: #fb56bf;
+}
+
+.work li {
+    float: left;
+    width: 30.15%;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px 1.59%;
+}
+
+.work li:hover {
+    box-shadow: 0px 1px 4px 0px rgb(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.work a,
+.work a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.work .image {
+    height: 150px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.work .work1 .image {
+    background: url(img/logo-work-1.png) right bottom, #fdb4e3;
+    background-repeat: no-repeat;
+}
+
+.work .work2 .image {
+    background: url(img/logo-work-2.png) center center, #424242;
+    background-repeat: no-repeat;
+}
+
+.work .work3 .image {
+    background: url(img/logo-work-3.png) center center, #8ad7fa;
+    background-repeat: no-repeat;
+}
+
+.work .text {
+    box-sizing: border-box;
+    height: 63px;
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+    padding: 13.5px;
+}
+
+.work h3 {
+    font-weight: bold;
+}
+
+/* ------------about------------ */
+.about {
+    max-width: 738px;
+    margin: auto;
+    padding: 0px 30px 60px 30px;
+}
+
+.about h2 {
+    color: #fb56bf;
+}
+
+.about img {
+    float: left;
+    width: 35%;
+}
+
+.about .p {
+    float: left;
+    margin-top: 25px;
+    margin-left: 6%;
+    width: 59%;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+/* ------------footer------------ */
+.footer {
+    background-image: url(img/img-Looper-bg.png), linear-gradient(#c0bffe, #9391fc);
+    background-repeat: no-repeat;
+    left: center;
+    top: center;
+    height: 87px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+/* ------------clear------------ */
+.clearfix {
+    clear: both;
+}
+
+.clear:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ------------------rwd768------------------ */
+@media only screen and (max-width: 768px) {
+
+    /* ------------header------------ */
+    .header{
+        height: 350px;
+    }
+    .header .logo {
+        width: 55%;
+    }
+
+    .header .link {
+        width: 45%;
+    }
+
+    /* ------------work------------ */
+    .work {
+        width: 90%;
+    }
+
+    .work li {
+        width: 45%;
+        margin: 0px 2.5% 20px 2.5%;
+    }
+
+    /* ------------work------------ */
+    .about .p {
+        margin-top: 0;
+    }
+}
+
+/* ------------------rwd640------------------ */
+@media only screen and (max-width: 640px) {
+
+    /* ------------all------------ */
+    h2 {
+        padding: 30px;
+    }
+
+    /* ------------header------------ */
+    .header {
+        height: 280px;
+    }
+
+    .header .logo {
+        margin-top: 70px;
+        width: 50%;
+    }
+
+    .header .link {
+        margin-top: 70px;
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .header .link a {
+        padding: 7px 0px;
+    }
+
+    /* ------------skill------------ */
+    .skill h2 {
+        margin-top: 50px;
+    }
+
+    .skill>ul>li {
+        float: none;
+        width: 90%;
+        margin: 0px 5% 10px 5%;
+        min-height: auto;
+        height: auto;
+        box-shadow: 0px 0px 1px 0px rgb(0, 0, 0, 0.4);
+        padding: 10px;
+    }
+
+    .skill .skill1,
+    .skill .skill2,
+    .skill .skill3 {
+        background-position: left 3% center;
+    }
+
+    .skill h3 {
+        margin-top: 0px;
+    }
+
+    .skill>ul>li>ul {
+        padding: 5px 0px 0px 30%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    /* ------------experience------------ */
+    .experience li {
+        width: 40%;
+    }
+
+    .experience .right {
+        margin-left: 50%;
+        margin-right: 4%;
+    }
+
+    .experience .left {
+        margin-right: 50%;
+        margin-left: 4%;
+    }
+}
+
+/* ------------------rwd568------------------ */
+@media only screen and (max-width: 568px) {
+
+    /* ------------all------------ */
+    h2 {
+        text-align: left;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid;
+    }
+
+    /* ------------header------------ */
+    .header {
+        height: auto;
+    }
+
+    .header span {
+        display: none;
+    }
+
+    .header .logo {
+        margin: 10px 0px 0px 10px;
+        float: left;
+        width: auto;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .header .logo img {
+        width: 80px;
+        float: left;
+    }
+
+    .header .logo h1 {
+        float: left;
+        margin-left: 10px;
+        font-size: 36px;
+        text-shadow: 0px 0px 30px #FFF;
+    }
+
+    .header .logo span {
+        float: left;
+    }
+
+    .header .link {
+        float: right;
+        width: auto;
+        margin: 10px 10px 0px 0px;
+    }
+
+    .header .link li {
+        height: 25px;
+        float: left;
+        padding: 7px;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .header .link img {
+        width: 20px;
+    }
+    /* ------------skill------------ */    
+    .skill h2 {
+        margin-top: 20px;
+    }
+    /* ------------experience------------ */
+    .experience ul {
+        background-position: 30px 0;
+        padding-top: 60px;
+    }
+
+    .experience ul:before {
+        left: 46px;
+    }
+
+    .experience ul:after {
+        left: 46px;
+    }
+
+    .experience .left,
+    .experience .right {
+        float: left;
+        margin: 10px 5% 0px 70px;
+        max-width: none;
+        width: 77%;
+    }
+
+    .experience li:before {
+        left: 46px;
+    }
+
+    /* ------------work------------ */
+    .work li {
+        width: 90%;
+        margin: 0px 5% 15px 5%;
+    }
+
+    /* ------------about------------ */
+    .about img {
+        display: none;
+    }
+
+    .about .p {
+        width: 90%;
+    }
+}
