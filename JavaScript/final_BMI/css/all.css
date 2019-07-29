@@ -1,0 +1,269 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+}
+
+button {
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.wrap {
+    margin: auto;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* header */
+
+.header {
+    height: 300px;
+    background-color: #424242;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header .logo {
+    margin-left: 173px;
+    display: block;
+    width: 117px;
+    height: 117px;
+    background-image: url(../img/BMICLogo.png);
+    background-size: 117px;
+    background-color: transparent;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header .inputs {
+    margin-left: 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.header .label {
+    color: #FFD366;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.header .input {
+    border: 2px solid #FFD366;
+    background-color: rgba(255, 255, 255, 0.18);
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 8px 16px;
+    color: rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.header .input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .input:focus::placeholder {
+    color: transparent;
+}
+
+.header .label[for="weight"] {
+    margin-top: 23px;
+}
+
+.header .button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #FFD366;
+    color: #424242;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 53px;
+}
+
+.header .button:hover {
+    box-shadow: 0 0 6px 3px rgba(255, 196, 50, 0.64);
+}
+
+.header .button:active {
+    background-color: #DEA821;
+}
+
+.header .result {
+    margin-left: 53px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #86D73F;
+    position: relative;
+}
+
+.header .result .circle {
+    width: 123px;
+    height: 123px;
+    border-radius: 50%;
+    background-color: transparent;
+    border-width: 6px;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-color: #86D73F;
+    display: flex;
+}
+
+.header .result .circle .value {
+    font-size: 32px;
+}
+
+.header .result .circle .key {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.header .result .new {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border: 3px solid #424242;
+    left: 93px;
+    bottom: 9px;
+    border-radius: 50%;
+    background-image: url(../img/icons_loop.png);
+    background-size: 14px 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #86D73F;
+}
+
+.header .result .new:hover{
+    background-color: #fff;
+}
+
+.header .result .type {
+    font-size: 32px;
+    margin-left: 15px;
+}
+
+/* main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.main .title {
+    font-size: 24px;
+    margin-top: 48px;
+}
+
+.main .records {
+    margin-top: 20px;
+    margin-bottom: 74px;
+}
+
+.main .records .record {
+    width: 617px;
+    height: 62px;
+    background-color: #fff;
+    border-width: 0px 0px 0px 7px;
+    border-style: solid;
+    border-color: #86D73F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 11px;
+    margin-top: 16px;
+}
+
+.main .records .record .type {
+    width: 80px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.main .records .record .key {
+    font-size: 12px;
+}
+
+.main .records .record .value {
+    font-size: 20px;
+    margin-left: 7px;
+}
+
+.main .records .record .date {
+    font-size: 12px;
+}
+
+/* footer */
+
+.footer {
+    height: 90px;
+    background-color: #FFD366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .logo {
+    background-image: url(../img/BMICLogo2.png);
+    background-size: 55px;
+    background-color: transparent;
+    width: 55px;
+    height: 55px;
+}

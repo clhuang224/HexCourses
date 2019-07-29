@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zn-TW">
+
+<head>
+    <title>BMI Calculator</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <h1><a href="#" class="logo">BMI Calculator </a></h1>
+            <div class="inputs">
+                <label class="label" for="height">身高 cm</label>
+                <input id="height" class="input" type="text" placeholder="請輸入身高">
+                <label class="label" for="weight">體重 kg</label>
+                <input id="weight" class="input" type="text" placeholder="請輸入體重">
+            </div>
+            <button class="button">看結果</button>
+            <div class="result">
+                <div class="circle">
+                    <div class="value">20.90</div>
+                    <div class="key">BMI</div>
+                </div>
+                <button class="new"></button>
+                <div class="type">理想</div>
+            </div>
+        </header>
+        <main class="main">
+            <h2 class="title">BMI 紀錄</h2>
+            <ul class="records">
+                <li class="record">
+                    <div class="type">理想</div>
+                    <div class="bmi"><span class="key">BMI</span><span class="value">20.90</span></div>
+                    <div class="weight"><span class="key">weight</span><span class="value">70kg</span></div>
+                    <div class="height"><span class="key">height</span><span class="value">180cm</span></div>
+                    <div class="date">01-10-2012</div>
+                </li>
+                <li class="record">
+                    <div class="type">輕度肥胖</div>
+                    <div class="bmi"><span class="key">BMI</span><span class="value">11.90</span></div>
+                    <div class="weight"><span class="key">weight</span><span class="value">70kg</span></div>
+                    <div class="height"><span class="key">height</span><span class="value">180cm</span></div>
+                    <div class="date">01-10-2012</div>
+                </li>
+            </ul>
+        </main>
+        <footer class="footer">
+            <a href="#" class="logo"></a>
+        </footer>
+    </div>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
