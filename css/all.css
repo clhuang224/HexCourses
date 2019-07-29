@@ -3,10 +3,12 @@
 }
 
 body {
+    margin: auto;
     padding: 15px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    max-width: 800px;
 }
 
 h1, h2 {
@@ -62,9 +64,14 @@ h2 {
 
 .table th, .table td {
     border-top: 0;
-    border-bottom: 1px #abedd8 solid;
+    border-bottom: 1px #a3c9c7 solid;
 }
 
 .table th{
     color: #48466d;
+}
+
+.table td{
+    text-align: right;
+    width: 100px;
 }
