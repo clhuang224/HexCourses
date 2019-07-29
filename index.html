@@ -10,41 +10,78 @@
     </meta>
     <meta property="og:description" content="裡展示觀看六角學院課程時的作業。">
     </meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
-	<h1>Lynn 的六角學院作業列表</h1>
-    <ul>
-        <li>
-            <h2><a href="https://www.udemy.com/html-css-learning/" target="_blank">使用 HTML、CSS 開發一個網站</a></h2>
-            <table>
-                <tr>
-                    <th>一頁式網站</th>
-                    <td><a href="https://github.com/clhuang224/HexCourses/tree/master/HTMLCSS/final_1" target="_blank">原始碼</a></td>
-                    <td><a href="./HTMLCSS/final_1/index.html" target="_blank">Demo</a></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <th>履歷網頁</th>
-                    <td><a href="https://github.com/clhuang224/HexCourses/tree/master/HTMLCSS/final_2" target="_blank">原始碼</a></td>
-                    <td><a href="./HTMLCSS/final_2/index.html" target="_blank">Demo</a></td>
-                    <td></td>
-                </tr>
-            </table>
-        </li>
-        <li>
-        	<h2><a href="https://www.udemy.com/jquery-learning/" target="_blank">用 jQuery 打造互動性網頁動畫效果</a></h2>
-            <table>
-                <tr>
-                    <th>一頁式網站</th>
-                    <td><a href="https://github.com/clhuang224/HexCourses/tree/master/jQuery/final" target="_blank">原始碼</a></td>
-                    <td><a href="./jQuery/final/index.html" target="_blank">Demo</a></td>
-                    <td></td>
-                </tr>
-            </table>
-        </li>
-    </ul>
+    <h1>Lynn 的六角學院作品集</h1>
+        <ul id="list-tab" class="nav nav-tabs">
+            <li class="active"><a href="#htmlcss" data-toggle="tab">HTML、CSS</a></li>
+            <li><a href="#jq" data-toggle="tab">jQuery</a></li>
+            <li><a href="#js" data-toggle="tab">JavaScript</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="htmlcss">
+                <h2><a href="https://www.udemy.com/html-css-learning/" target="_blank">使用 HTML、CSS 開發一個網站</a></h2>
+                <table class="table">
+                    <tr>
+                        <th>一頁式網站</th>
+                        <td><a href="https://github.com/clhuang224/HexCourses/tree/master/HTMLCSS/final_1"
+                                target="_blank">原始碼</a></td>
+                        <td><a href="./HTMLCSS/final_1/index.html" target="_blank">Demo</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>履歷網頁</th>
+                        <td><a href="https://github.com/clhuang224/HexCourses/tree/master/HTMLCSS/final_2"
+                                target="_blank">原始碼</a></td>
+                        <td><a href="./HTMLCSS/final_2/index.html" target="_blank">Demo</a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane" id="jq">
+                <h2><a href="https://www.udemy.com/jquery-learning/" target="_blank">用 jQuery 打造互動性網頁動畫效果</a></h2>
+                <table class="table">
+                    <tr>
+                        <th>一頁式網站</th>
+                        <td><a href="https://github.com/clhuang224/HexCourses/tree/master/jQuery/final"
+                                target="_blank">原始碼</a></td>
+                        <td><a href="./jQuery/final/index.html" target="_blank">Demo</a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane" id="js">
+                <h2><a href="https://www.udemy.com/javascript-learning/" target="_blank">JavaScript 入門篇 - 學徒的試煉</a>
+                </h2>
+                <table class="table">
+                    <tr>
+                        <th>BMI Caculator</th>
+                        <td><a href="https://github.com/clhuang224/HexCourses/tree/master/JavaScript/final_BMI"
+                                target="_blank">原始碼</a></td>
+                        <td><a href="./JavaScript/final_BMI/index.html" target="_blank">Demo</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>高雄旅遊資訊</th>
+                        <td><a href="https://github.com/clhuang224/HexCourses/tree/master/JavaScript/final_travel"
+                                target="_blank">原始碼</a></td>
+                        <td><a href="./JavaScript/final_travel/index.html" target="_blank">Demo</a></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- js -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/all.js"></script>
 </body>
 
 </html>
