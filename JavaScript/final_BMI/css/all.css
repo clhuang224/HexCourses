@@ -44,7 +44,8 @@ table {
     font-family: 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
 }
 
-button {
+button,
+input[type="submit"] {
     outline: none;
     border: 0;
     cursor: pointer;
@@ -107,8 +108,12 @@ button {
     outline: none;
 }
 
-.header .input::placeholder {
+.header .inputs .input::placeholder {
     color: rgba(255, 255, 255, 0.5);
+}
+
+.header .inputs.empty .input::placeholder {
+    color: #FF1200;
 }
 
 .header .input:focus::placeholder {
@@ -119,7 +124,7 @@ button {
     margin-top: 23px;
 }
 
-.header .button {
+.header .submit {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -132,11 +137,11 @@ button {
     margin-left: 53px;
 }
 
-.header .button:hover {
+.header .submit:hover {
     box-shadow: 0 0 6px 3px rgba(255, 196, 50, 0.64);
 }
 
-.header .button:active {
+.header .submit:active {
     background-color: #DEA821;
 }
 
@@ -173,7 +178,7 @@ button {
     margin-top: 3px;
 }
 
-.header .result .new {
+.header .result .renew {
     position: absolute;
     width: 36px;
     height: 36px;
@@ -188,8 +193,8 @@ button {
     background-color: #86D73F;
 }
 
-.header .result .new:hover{
-    background-color: #fff;
+.header .result .renew:hover {
+    border-color: #fff;
 }
 
 .header .result .type {
@@ -214,16 +219,15 @@ button {
 
 .main .records {
     margin-top: 20px;
-    margin-bottom: 74px;
+    margin-bottom: 20px;
 }
 
 .main .records .record {
-    width: 617px;
+    width: 630px;
     height: 62px;
     background-color: #fff;
     border-width: 0px 0px 0px 7px;
     border-style: solid;
-    border-color: #86D73F;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -248,6 +252,43 @@ button {
 
 .main .records .record .date {
     font-size: 12px;
+}
+
+.main .records .record .delete {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #FFD366;
+    color: #424242;
+}
+
+.main .records .record .delete:hover {
+    box-shadow: 0 0 2px 1px #DEA821;
+}
+
+.main .records .record .delete:active {
+    background-color: #DEA821;
+}
+
+.main .delete-all {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #FFD366;
+    color: #424242;
+    margin-bottom: 54px;
+}
+
+.main .delete-all:hover {
+    box-shadow: 0 0 3px 2px #DEA821;
+}
+
+.main .delete-all:active {
+    background-color: #DEA821;
 }
 
 /* footer */
