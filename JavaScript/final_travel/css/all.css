@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    box-sizing: border-box;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}
+
+select{
+    outline: none;
+}
+
+body{
+    padding: 5px;
+}
+
+.wrap {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* header */
+
+.header {
+    height: 380px;
+    background-image: url(../img/Hero.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.header>.title {
+    font-size: 40px;
+    margin-top: 89px;
+    color: #FFF;
+    font-weight: normal;
+}
+
+.header .select {
+    width: 452px;
+    height: 48px;
+    border: 3px #FFF solid;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 3px;
+    -webkit-appearance: none; 
+   -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/icons_down.png);
+    background-repeat: no-repeat;
+    background-position: center right 11px;
+    padding: 9.5px;
+    margin-top: 96px;
+}
+
+
+.header .popular {
+    width: 800px;
+    border-radius: 5px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -84px;
+    left: 112px;
+    padding: 18px;
+    padding-bottom: 3px;
+}
+
+.header .popular>.title{
+    padding: 2px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-left: 6px;
+}
+
+.header .popular .list{
+    margin: 12px 17px 0px 17px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.header .popular .list .list-button{
+    margin: 0 15px 15px 15px;
+    width: 130px;
+    height: 42px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 21px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .popular .list .list-button.purple{
+    background-color: #8A82CC;
+}
+.header .popular .list .list-button.orange{
+    background-color: #FFA782;
+}
+.header .popular .list .list-button.yellow{
+    background-color: #F5D005;
+}
+.header .popular .list .list-button.blue{
+    background-color: #559AC8;
+}
+
+.main {
+    background-color: #F7F7F7;
+    padding: 39px;
+}
+
+.main .line{
+    width: 900px;
+    height: 1px;
+    margin-top: 113px;
+    border: 0;
+    background-image: url(../img/dash.png);
+}
+
+
+.footer {
+    height: 90px;
+    background-color: #559AC8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
