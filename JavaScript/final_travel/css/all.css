@@ -42,20 +42,22 @@ table {
 * {
     font-family: 'Noto Sans TC', sans-serif;
     box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-button{
+button {
     outline: none;
     cursor: pointer;
     border: 0;
     background-color: transparent;
 }
 
-select{
+select {
     outline: none;
 }
 
-body{
+body {
     padding: 5px;
 }
 
@@ -97,8 +99,8 @@ body{
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 3px;
-    -webkit-appearance: none; 
-   -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     background-image: url(../img/icons_down.png);
     background-repeat: no-repeat;
@@ -106,7 +108,6 @@ body{
     padding: 9.5px;
     margin-top: 96px;
 }
-
 
 .header .popular {
     width: 800px;
@@ -119,21 +120,21 @@ body{
     padding-bottom: 3px;
 }
 
-.header .popular>.title{
+.header .popular>.title {
     padding: 2px;
     font-size: 18px;
     line-height: 21px;
     margin-left: 6px;
 }
 
-.header .popular .list{
+.header .popular .list {
     margin: 12px 17px 0px 17px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-.header .popular .list .list-button{
+.header .popular .list .list-button {
     margin: 0 15px 15px 15px;
     width: 130px;
     height: 42px;
@@ -146,32 +147,205 @@ body{
     align-items: center;
 }
 
-.header .popular .list .list-button.purple{
+.header .popular .list .list-button.purple {
     background-color: #8A82CC;
 }
-.header .popular .list .list-button.orange{
+
+.header .popular .list .list-button.orange {
     background-color: #FFA782;
 }
-.header .popular .list .list-button.yellow{
+
+.header .popular .list .list-button.yellow {
     background-color: #F5D005;
 }
-.header .popular .list .list-button.blue{
+
+.header .popular .list .list-button.blue {
     background-color: #559AC8;
 }
 
 .main {
     background-color: #F7F7F7;
     padding: 39px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.main .line{
+.main .line {
+    position: relative;
     width: 900px;
     height: 1px;
     margin-top: 113px;
     border: 0;
     background-image: url(../img/dash.png);
+    overflow: initial;
+    background-repeat: initial;
 }
 
+.main .line::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -11.5px;
+    left: 438px;
+    border: #559AC8 1px solid;
+    border-radius: 50%;
+    background-size: 12px 10px;
+    background-image: url(../img/icons_down_blue.png);
+    background-repeat: no-repeat;
+    background-position: center 8px;
+    background-color: #F7F7F7;
+}
+
+.main .title {
+    font-size: 36px;
+    line-height: 73px;
+    margin-top: 76px;
+    color: #8A82CC;
+}
+
+.main .list {
+    width: 944px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main .list .alert{
+    width: 100%;
+    text-align: center;
+}
+
+.main .list .spot {
+    height: 273px;
+    width: 464px;
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.main .list .spot .name {
+    margin: 117px 0 14px 22px;
+    color: #FFF;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.main .list .spot .name a{
+    color: #FFF;
+}
+
+.main .list .spot .aria {
+    margin: 125px 24px 11px 0;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main .list .spot .information {
+    width: 100%;
+    height: 118px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px 19px 22px 22px;
+}
+
+.main .list .spot .information .time, .main .list .spot .information .address, .main .list .spot .information .phone, .main .list .spot .information .tag {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main .list .spot .information .time, .main .list .spot .information .address {
+    width: 100%;
+}
+
+.main .list .spot .information .address{
+    color: #000;
+}
+
+.main .list .spot .information .phone {
+    color: #000;
+    width: 320px;
+}
+
+.main .list .spot .information .tag {
+    width: 94px;
+}
+
+.main .list .spot .information .time::before, .main .list .spot .information .address::before, .main .list .spot .information .phone::before, .main .list .spot .information .tag::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main .list .spot .information .time::before {
+    background-size: 18px 18px;
+    background-image: url(../img/icons_clock.png);
+}
+
+.main .list .spot .information .address::before {
+    background-size: 16px 20px;
+    background-image: url(../img/icons_pin.png);
+}
+
+.main .list .spot .information .phone::before {
+    background-size: 12px 20px;
+    background-image: url(../img/icons_phone.png);
+}
+
+.main .list .spot .information .tag::before {
+    background-size: 20px 20px;
+    background-image: url(../img/icons_tag.png);
+}
+
+.main .pagination {
+    margin-top: 8px;
+}
+
+.main .pagination .pag-button {
+    color: #4A4A4A;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.main .pagination .pag-button.number {
+    width: 24px;
+    height: 24px;
+    margin: 0px 4px;
+}
+
+.main .pagination .pag-button.previous, .main .pagination .pag-button.next {
+    height: 24px;
+    margin: 0px 22px;
+}
+
+.main .pagination .pag-button.active {
+    cursor: initial;
+}
+
+.main .pagination .pag-button.active, .main .pagination .pag-button:hover, .main .pagination .pag-button:active {
+    color: #559AC8;
+}
+
+.main .pagination .pag-button.unable, .main .pagination .pag-button.unable:hover {
+    color: #4A4A4A;
+    opacity: 0.5;
+    cursor: initial;
+}
 
 .footer {
     height: 90px;
@@ -180,4 +354,18 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+}
+
+.footer .title {
+    color: #FFF;
+    margin-top: 24px;
+}
+
+.footer .reference {
+    color: #FFD366;
+    margin-top: 15px;
+    margin-bottom: 23px;
 }
